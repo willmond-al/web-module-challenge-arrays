@@ -168,12 +168,14 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
+let newArray = []
 function filterByWord(array, keyWord){
     for (i in array){
         if (array[i].includes(keyWord)){
-            console.log(array[i])
+            newArray.push(array[i])
         }
     }
+    return newArray
 }
 
 
