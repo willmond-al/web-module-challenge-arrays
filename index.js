@@ -45,12 +45,12 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-
 function copy(array){
     let copyArray = [...array]
     return copyArray
-}    
+}
 console.log(copy(originalFlavors))
+
 
 
 
@@ -142,8 +142,9 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(array, flavorName){
+    array.splice(originalFlavors.indexOf(flavorName), 1)
+        return array
 }
 
 
@@ -167,8 +168,12 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(array, keyWord){
+    for (i in array){
+        if (array[i].includes(keyWord)){
+            console.log(array[i])
+        }
+    }
 }
 
 
